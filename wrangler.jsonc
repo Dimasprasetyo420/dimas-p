@@ -1,8 +1,16 @@
 {
   "name": "dimas-todo",
   "compatibility_date": "2024-05-05",
-  "site": {
-    "bucket": "./dist",
-    "entry-point": "."
-  }
+  "assets": {
+    "binding": "ASSETS",
+    "not_found_handling": "single-page-application"
+  },
+  "main": "./api/index.js",
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "dimas-todo",
+      "database_id": "609d0c7d-0d02-47ac-88cc-740411f1a113"
+    }
+  ]
 }
