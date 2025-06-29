@@ -66,7 +66,7 @@ onMounted(() => {
 					placeholder="Masukkan kegiatan"
 					v-model="input_content" />
 				
-				<h4>Pick a category</h4>
+				<h4>jenis kegiatan</h4>
 				<div class="options">
 
 					<label>
@@ -93,12 +93,12 @@ onMounted(() => {
 
 				</div>
 
-				<input type="submit" value="Add todo" />
+				<input type="submit" value="Tambah tugas" />
 			</form>
 		</section>
 
 		<section class="todo-list">
-			<h3>TODO LIST</h3>
+			<h3>LIST KEGIATAN</h3>
 			<div class="list" id="todo-list">
 
 				<div v-for="todo in todos_asc" :class="`todo-item ${todo.done && 'done'}`">
