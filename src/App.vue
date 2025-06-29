@@ -74,9 +74,9 @@ onMounted(() => {
 							type="radio" 
 							name="category" 
 							id="category1" 
-							value="business"
+							value="biasa"
 							v-model="input_category" />
-						<span class="bubble business"></span>
+						<span class="bubble biasa"></span>
 						<div>Biasa</div>
 					</label>
 
@@ -85,9 +85,9 @@ onMounted(() => {
 							type="radio" 
 							name="category" 
 							id="category2" 
-							value="personal"
+							value="penting"
 							v-model="input_category" />
-						<span class="bubble personal"></span>
+						<span class="bubble penting"></span>
 						<div>Penting</div>
 					</label>
 
@@ -105,9 +105,9 @@ onMounted(() => {
 					<label>
 						<input type="checkbox" v-model="todo.done" />
 						<span :class="`bubble ${
-							todo.category == 'business' 
-								? 'business' 
-								: 'personal'
+							todo.category == 'biasa' 
+								? 'biasa' 
+								: 'penting'
 						}`"></span>
 					</label>
 
